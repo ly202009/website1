@@ -60,4 +60,11 @@ now the new web address is lywebsite1.netlify.app
 Yah!
 
 14. Set a scheduled task to upload the contents from local to github regularly (every hour)
+- Create a file 'autocommit.cmd' under the folder cmd which is newly created
+- in the cmd file, put the following contents
+c:
+cd C:\Projects\website1
+git add .
+git commit -m "v5"
+git push origin master
 -
