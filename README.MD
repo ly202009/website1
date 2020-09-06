@@ -1,4 +1,5 @@
 This is my first web building project
+0. under c:\projects, create a folder called 'website1'
 
 1. Init the project by:
 https://docs.npmjs.com/cli/init
@@ -28,7 +29,7 @@ https://docs.github.com/en/github/using-git/adding-a-remote
 
 in the terminal window, type 'git remote add origin https://github.com/ly202009/website1.git'
 
-10. to commit (upload/push) the local files onto the remote repository
+11. to commit (upload/push) the local files onto the remote repository
 type the following lines each at a time:
 'git add .'
 'git commit -m "commit 1"'
@@ -36,15 +37,15 @@ type the following lines each at a time:
 
 If it is the first time pushing to github, a window pops up asking for account and password for github
 
-11. Go to netlify.com and sign up using the github account
+12. Go to netlify.com and sign up using the github account
 
-12. add netlify account and github account homepage as bookmark in Google Chrome's bookmark folder 'web building'
+13. add netlify account and github account homepage as bookmark in Google Chrome's bookmark folder 'web building'
 
-13. Create a new website in netlify using contents from github
+14. Create a new website in netlify using contents from github
 - click new site from git
 - click github
 - click authorize netlify
-- select Only select repositories
+- select all repositories
 - and select the repository 'website1'
 - and select the repsittory 'website1' again
 - and click 'deploy site'
@@ -59,7 +60,9 @@ now the new web address is lywebsite1.netlify.app
 
 Yah!
 
-14. Set a scheduled task to upload the contents from local to github regularly (every hour)
+15. Add lywebsite1.netlify.app to the bookmark folder 'Netlify Sites'
+
+16. Set a scheduled task to upload the contents from local to github regularly (every hour)
 - Create a file 'autocommit.cmd' under the folder cmd which is newly created
 - in the cmd file, put the following contents
 c:
@@ -67,4 +70,15 @@ cd C:\Projects\website1
 git add .
 git commit -m "v5"
 git push origin master
--
+- open up the windows task scheduler
+- in the panel 'Actions' (on the right), click create task
+- in the pop up menu, click the tag 'Actions', click 'new', and browse to point to the file 'C:\Projects\website1\cmd\autocommit.cmd'
+- click ok to save the settings
+- click the tag 'trigger', click 'new' and set the following:
+set the settings to daily
+start from 8am
+check the box for repeating and set the interval as one hour
+- click ok
+- click the tag settings
+- check the box 'Run task as soon as possible after a scheduled start is missed'
+- finally, click the tag 'general', and enter the name of the scheduled task: '_autocommit website1 project'
