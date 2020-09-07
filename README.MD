@@ -1,3 +1,13 @@
+HTML learning:
+1. adding DIV elements
+2. define styles (e.g., border, background color, alignment)
+3. attributes/properties (e.g., name, style, etc.) of a tag/element/selector.
+
+
+*****************************************************
+The following is for init of the project 
+*****************************************************
+
 This is my first web building project
 0. under c:\projects, create a folder called 'website1'
 
