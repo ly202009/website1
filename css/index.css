@@ -1,13 +1,18 @@
 .paragraph {
-    border: 5px solid lightblue;
-    margin: 10px;
-    background-color: orange;
-    float: left;
-}
+            color:white;
+            font-family: EB Garamond;
+            background-color: black;
+            border:5px dotted black;
+            float:left;
+            font-size: 20px;
+            
+
+        }
+
 
 .heading {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
