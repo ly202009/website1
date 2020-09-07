@@ -1,7 +1,9 @@
 HTML learning:
 1. adding DIV elements
 2. define styles (e.g., border, background color, alignment)
-3. attributes/properties (e.g., name, style, etc.) of a tag/element/selector.
+3. attributes/properties (e.g., name, style, class, etc.) of a tag/element/selector.
+4. assign tags/elements/selectors into classes, and set style for a specific class in the head section.
+5. define styles in a css file instead of within the html file
 
 
 *****************************************************
