@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+ 
+
+    </head>
+
+    <body>
+
+        <div>div0</div>
+
+        <script>
+
+            //console.log (document)
+
+            //1 create a div for banner heading
+
+            //1.a, creating the box
+
+            document.body.appendChild(document.createElement('div'))
+
+            /**
+
+             * within (document -> body node), append a child node at the end. 
+
+             * So what is the childnode to add?
+
+             * It is within the (), i.e.: document.createElement('div')
+
+             * 
+
+             * Here, document is a special object, called a class
+
+             * a class can have properties, such as document.body
+
+             * a class can also have methods (which are indeed functions), such as document.createElement()
+
+            */
+
+ 
+
+            //1.b, add text
+
+            //1.b1, find the created box
+
+            var alldivs = document.getElementsByTagName('div')
+
+            console.log(alldivs)
+
+            let box1 = alldivs[1]
+
+            box1.innerText = 'Hello world';
+
+ 
+
+            // 1.b2, change the properties of div1
+
+            box1.style.width="200px"
+
+            box1.id="box1";
+
+            box1.setAttribute('class', 'heading')
+
+            box1.setAttribute('name', 'box1')
+
+ 
+
+            //2. add div box2
+
+            //2a. add the div
+
+            const body = document.body
+
+            let box2 =  document.createElement('div'); // not added into the document yet
+
+ 
+
+            let appended_box2=body.appendChild(box2) 
+
+            console.log(box2===box2)
+
+ 
+
+            box2.setAttribute('id', 'box2')
+
+            box2.setAttribute('name', 'box2')
+
+            // js_box1
+
+ 
+
+            //2b, set properties of div2
+
+            // check the historical index.html
+
+ 
+
+            // ? what is the difference among var/let/const
+
+            // https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+
+ 
+
+            //3. add box2a, and box2b for paragraphs
+
+            function add_div() {
+
+                let tmpobj = document.createElement('div')
+
+                box2.appendChild(tmpobj)
+
+                return tmpobj
+
+            }
+
+            let box2a = add_div();            
+
+            box2a.setAttribute('id', 'box2a')
+
+            box2a.setAttribute('name', 'box2a')
+
+            box2a.setAttribute('class', 'paragraph')
+
+            // console.log(tmpobj)
+
+            console.log(box2a)
+
+
+
+
+
+        </script>
+
+    </body>
+
+</html>
