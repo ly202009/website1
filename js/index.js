@@ -45,8 +45,9 @@
         box2b.setAttribute('class', 'paragraph')
         
         // functions
-        function addbox () {
+        function addbox() {
             let tmpobj = document.createElement('div')
             body.appendChild(tmpobj)
             return tmpobj
         }
+        addbox()
